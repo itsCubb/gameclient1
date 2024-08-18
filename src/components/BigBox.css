@@ -1,0 +1,16 @@
+.big-box {
+  width: 75%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50.9%; /* Adjusted to move slightly down */
+  left: 41.5%; /* Adjusted to move slightly more left */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  -webkit-app-region: no-drag;
+}

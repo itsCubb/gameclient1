@@ -1,0 +1,47 @@
+.friends-icon-container {
+  position: fixed;
+  top: 60px; /* Position down */
+  right: 140px; /* Adjusted position */
+  background-color: rgba(255, 255, 255, 0.1); /* Same background as ShoppingCartIcon */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1100; /* Ensure it's above other content */
+  -webkit-app-region: no-drag; /* Make the icon non-draggable */
+}
+
+.friends-icon {
+  font-size: 35px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.friends-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Match hover background */
+  transform: scale(1.1) translateZ(10px); /* Same scaling effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Add shadow for 3D effect */
+}
+
+.friends-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: none;
+  min-width: 300px;
+  color: white;
+  z-index: 1200; /* Ensure it's above the container */
+}
+
+.friends-dropdown.active {
+  display: block;
+}

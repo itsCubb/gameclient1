@@ -1,0 +1,34 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure it takes the full height */
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-left: 35px;
+  -webkit-app-region: drag;
+}
+
+.sidebar-logo {
+  margin-bottom: 70px; /* Space between the logo and the options */
+  width: 60px;
+  height: 60px;
+  align-self: center; /* Center the logo within the sidebar */
+  -webkit-app-region: no-drag; /* Prevent dragging from the logo */
+}
+
+.options-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align options to the top */
+  margin-top: 0px; /* Remove extra space above the options */
+  -webkit-app-region: no-drag; /* Prevent dragging from options */
+}
+
+.options-box > div {
+  margin-bottom: 20px; /* Adds spacing between the options */
+  width: 100%; /* Make sure options fill the available width */
+}

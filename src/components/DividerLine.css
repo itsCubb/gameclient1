@@ -1,0 +1,8 @@
+.divider-line {
+  width: 1.1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 65px; /* Move the divider line slightly down */
+  right: 200px; /* Keep it aligned with the right side */
+}

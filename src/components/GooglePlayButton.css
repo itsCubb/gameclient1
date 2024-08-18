@@ -1,0 +1,53 @@
+/* GooglePlayButton.css */
+.google-play-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 15px;
+  background-color: white; /* Default background color */
+  color: black; /* Default text color */
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, color 0.3s, border 0.3s ease; /* Smooth transitions */
+  width: 250px; /* Set explicit width */
+  height: 60px; /* Set explicit height */
+  justify-content: center; /* Center content horizontally */
+  border: 2px solid transparent; /* Start with a transparent border */
+}
+
+.google-play-button:hover {
+  background-color: #1a1a1a; /* Darker background color on hover */
+  color: white; /* Text color turns white on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  border: 2px solid white; /* White border on hover */
+}
+
+.google-icon {
+  margin-right: 12px;
+  width: 24px; /* Adjust size of the Google Play icon */
+  height: 24px; /* Adjust size of the Google Play icon */
+  /* No transition for color on hover */
+}
+
+.google-play-button:hover .google-icon {
+  filter: none; /* Ensure the icon color does not change on hover */
+}
+
+.google-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.download-on {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.store-name {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+/* SearchBar.css */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Same color as the big box */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px;
+    position: absolute; /* Positioning the search bar absolutely */
+    top: 110px; /* Distance from the top of the big box */
+    left: 50px; /* Distance from the left of the big box */
+    width: 250px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    -webkit-app-region: no-drag; /* Make the search bar non-draggable */
+    transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    border: 2px solid transparent; /* Start with a transparent border */
+}
+
+.search-bar-container:hover {
+    border: 2px solid white; /* Highlight the border with white on hover */
+}
+
+.search-icon {
+    color: white;
+    margin-right: 10px; /* Space between the icon and the text */
+}
+
+.search-input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 5px; /* Add some space so you can type before the "S" in Search */
+}
+
+.search-input::placeholder {
+    color: white;
+    opacity: 0.7;
+}

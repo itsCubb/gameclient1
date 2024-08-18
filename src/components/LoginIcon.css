@@ -1,0 +1,161 @@
+.login-icon-container {
+  position: fixed;
+  top: 60px; /* Adjust the distance from the top */
+  right: 80px; /* Adjust the distance from the right */
+  background-color: rgba(255, 255, 255, 0.1); /* Same background as ShoppingCartIcon */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1200;
+  -webkit-app-region: no-drag; /* Prevent dragging */
+}
+
+.login-icon {
+  font-size: 35px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.login-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Match hover background */
+  transform: scale(1.1) translateZ(10px); /* Same scaling effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Add shadow for 3D effect */
+}
+
+.login-dropdown {
+  position: absolute;
+  top: 125px;
+  right: 80px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: none;
+  min-width: 300px;
+  color: white;
+  z-index: 1300; /* Ensure the dropdown is above other elements */
+}
+
+.login-dropdown .login-icon {
+  cursor: pointer; /* Ensure the cursor changes to a pointer when hovering over the icon */
+}
+
+.login-dropdown.active {
+  display: block;
+}
+
+.login-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #1a1a1a transparent;
+  z-index: 1001;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align everything to the start */
+  gap: 10px; /* Add some space between items */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.copy-icon {
+  margin-left: auto; /* Push the copy icon to the right */
+}
+
+.dropdown-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size:15px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.dropdown-option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.status-dropdown {
+  margin-left: -10px;
+  margin-top: 25px;
+  padding: 5px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.status-dropdown:focus {
+  outline: none;
+}
+
+.status-dropdown option {
+  background-color: #1a1a1a;
+}
+
+.forum-icon,
+.help-icon,
+.manage-account-icon,
+.settings-icon,
+.system-update-icon,
+.logout-icon,
+.clear-icon {
+  margin-right: 10px;
+}
+
+.external-page-icon {
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Space between the icons */
+  padding-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  line-height: 1; /* Remove any vertical spacing around the icons */
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

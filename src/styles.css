@@ -1,0 +1,67 @@
+/* Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0a0a0a;
+}
+
+/* Draggable Area for Entire Screen */
+.draggable-screen {
+  -webkit-app-region: drag;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it’s behind other elements */
+}
+
+/* Non-draggable areas (icons, buttons, etc.) */
+.notification-icon-container,
+.shopping-cart-icon-container,
+.friends-icon-wrapper,
+.login-icon-wrapper,
+.search-bar-container,
+.browse-games,
+.login-dropdown,
+.friends-dropdown,
+.shopping-cart-dropdown,
+.notification-dropdown,
+.button-class {
+  /* Add any other classes you want to exclude from dragging */
+  -webkit-app-region: no-drag;
+  z-index: 2; /* Ensure they are above the draggable area */
+}
+
+/* Positioning icons on the right */
+.icons-container {
+  position: absolute;
+  top: 20px; /* Adjust based on your design */
+  right: 20px; /* Align the icons to the right */
+  display: flex;
+  gap: 20px; /* Space between icons */
+  z-index: 1000; /* Keep them above other content */
+}
+
+/* Prevent text selection */
+* {
+  user-select: none;
+}
+
+/* Additional styling */
+.app-wrapper {
+  padding-top: 0px; /* Ensure no unnecessary padding at the top */
+  margin-top: 0px; /* Ensure no unnecessary margin at the top */
+}
+
+.browse-games {
+  z-index: 1000;
+}

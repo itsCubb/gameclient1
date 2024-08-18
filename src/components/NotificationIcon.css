@@ -1,0 +1,81 @@
+.notification-icon-container {
+  position: absolute;
+  top: 60px; /* Position near the top */
+  right: 275px; /* Aligns it to the right edge of the window */
+  display: inline-block;
+  cursor: pointer;
+  -webkit-app-region: no-drag; /* Ensures the area is non-draggable */
+}
+
+.notification-icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-app-region: no-drag; /* Ensure it's only for the icon circle */
+}
+
+.notification-icon-circle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1) translateZ(10px); /* Slight scaling and translation for 3D effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Add shadow for 3D effect */
+}
+
+.notification-icon {
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 30px; /* Keeps the padding for a spacious feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: none;
+  min-width: 400px; /* Keep the increased width */
+  min-height: 400px; /* Increase the height even more */
+  color: white;
+  z-index: 1100;
+}
+
+
+.notification-dropdown.active {
+  display: block;
+}
+
+.notification-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #1a1a1a transparent;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444; /* Adjust the color for the divider */
+  margin: 0;
+  margin-bottom: 10px;
+}

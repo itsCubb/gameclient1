@@ -1,0 +1,23 @@
+/* AppStoreButtons.css */
+.app-store-buttons {
+  position: fixed; /* Fix the buttons relative to the screen */
+  right: 250px; /* Move them 100px from the right edge */
+  bottom: 60px; /* Adjust this value to position them vertically */
+  display: flex;
+  justify-content: flex-end; /* Ensure buttons align to the right within the container */
+  align-items: center;
+  width: auto; /* Allow the width to adjust based on content */
+}
+
+
+.app-store-buttons .apple-store-button {
+  margin-left:-50px; /* Push these buttons to the left */
+}
+
+.app-store-buttons .google-play-button {
+  margin-left:0px; /* Push these buttons to the left */
+}
+
+.app-store-buttons .game-engine-dev-button {
+  margin-left: 180px; /* Push the GameEngineDevButton to the right */
+}
